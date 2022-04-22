@@ -1,0 +1,58 @@
+h4{
+    padding-left: 40%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    padding-left: 40%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.productControl{
+    padding-left: 47%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(241, 211, 136);
+}
+
+.productCurrent{
+    padding-left: 47%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(252, 216, 125);
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 2px solid purple;
+    background-color: rgb(255, 214, 164);
+   
+  }
+
+  body{
+      background-image:url(https://krot.info/uploads/posts/2021-02/1613582428_17-p-svetlii-fon-s-yedoi-19.jpg) ;
+      background-size: 100%;
+      background-repeat:inherit;
+  }
+
+  .preview{
+      background-color: bisque;
+      background-size: 100%;
+      
+  }
+
+  h1{
+    padding-left: 40%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    border-bottom: 0px;
+  }
+
+  h2{
+    padding-left: 41%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    background-color: rgb(122, 245, 103);
+  }
+
+ 
+
+  

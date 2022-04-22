@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Счётчик калорий</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="preview">
+    <h1>Счётчик калорий</h1>
+    <h2>Выберите продукты</h2>
+  </div>
+  
+  <div class="wholePage">
+      <div class="row">
+
+            <!--Еда-->
+          <div class="firstColumn">
+              <div class="foodRow">
+                  <table border="1">
+                    <tr>
+                      <td>
+                  <!-- Яблоко -->
+                  <div class="apple">
+                      <div class="product1Card" data-id="01">
+                          <img src="images\apple.jpg" alt="" width="250">
+                          <hr>
+                          <div class="card-body">
+                              <h4 class="productTitle">Яблоко</h4>
+                              <p><small data-products-in-box class="text-muted">63 ккал</small></p>
+                              
+                              <div class="details">
+                                  
+                                <!-- Счётчик -->
+                                  <div class="counterWrapper">
+                                      <div class="productControl" data-action="minus">-</div>
+                                      <div class="productCurrent" data-counter>1</div>
+                                      <div class="productControl" data-action="plus">+</div>
+                                  </div>
+                                <!-- Конец счётчика -->
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </td>
+
+                <td>
+                  <!-- Груша -->
+                  <div class="product2Card" data-id="02">
+                    <img src="images\pear.jpg" alt="" width="250">
+                    <hr>
+                    <div class="card-body">
+                        <h4 class="productTitle">Груша</h4>
+                        <p><small data-products-in-box class="text-muted">58 ккал</small></p>
+
+                        <div class="details">
+                            
+                          <!-- Счётчик -->
+                            <div class="counterWrapper">
+                                <div class="productControl" data-action="minus">-</div>
+                                <div class="productCurrent" data-counter>1</div>
+                                <div class="productControl" data-action="plus">+</div>
+                            </div>
+                          <!-- Конец счётчика -->
+
+                        </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <!-- Банан -->
+                  <div class=" product3Card" data-id="03">
+                    <img src="images\banana.jpg" alt="" width="250">
+                    <hr>
+                    <div class="card-body">
+                        <h4 class="productTitle">Банан</h4>
+                        <p><small data-products-in-box class="text-muted">94 ккал</small></p>
+
+                        <div class="details">
+                            
+                          <!-- Счётчик -->
+                            <div class="counterWrapper">
+                                <div class="productControl" data-action="minus">-</div>
+                                <div class="productCurrent" data-counter>1</div>
+                                <div class="productControl" data-action="plus">+</div>
+                            </div>
+                          <!-- Конец счётчика -->
+
+                        </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <!-- Персик -->
+                    <div class="product4Card" data-id="04">
+                      <img src="images\peach.jpg" alt="" width="250">
+                      <hr>
+                      <div class="card-body">
+                          <h4 class="productTitle">Персик</h4>
+                          <p><small data-products-in-box class="text-muted">46 ккал</small></p>
+  
+                          <div class="details">
+                              
+                            <!-- Счётчик -->
+                              <div class="counterWrapper">
+                                  <div class="productControl" data-action="minus">-</div>
+                                  <div class="productCurrent" data-counter>1</div>
+                                  <div class="productControl" data-action="plus">+</div>
+                              </div>
+                            <!-- Конец счётчика -->
+  
+                          </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <!-- Огурец -->
+                      <div class="product5Card" data-id="05">
+                        <img src="images\cucumber.jpg" alt="" width="250">
+                        <hr>
+                        <div class="card-body">
+                            <h4 class="productTitle">Огурец</h4>
+                            <p><small data-products-in-box class="text-muted">14 ккал</small></p>
+    
+                            <div class="details">
+                                
+                              <!-- Счётчик -->
+                                <div class="counterWrapper">
+                                    <div class="productControl" data-action="minus">-</div>
+                                    <div class="productCurrent" data-counter>1</div>
+                                    <div class="productControl" data-action="plus">+</div>
+                                </div>
+                              <!-- Конец счётчика -->
+    
+                            </div>
+                        </div>
+                      </td>
+
+                      <td>
+                        <!-- Помидор -->
+                        <div class="product6Card" data-id="06">
+                          <img src="images\tomato.jpg" alt="" width="250">
+                          <hr>
+                          <div class="card-body">
+                              <h4 class="productTitle">Помидор</h4>
+                              <p><small data-products-in-box class="text-muted">20 ккал</small></p>
+      
+                              <div class="details">
+                                  
+                                <!-- Счётчик -->
+                                  <div class="counterWrapper">
+                                      <div class="productControl" data-action="minus">-</div>
+                                      <div class="productCurrent" data-counter>1</div>
+                                      <div class="productControl" data-action="plus">+</div>
+                                  </div>
+                                <!-- Конец счётчика -->
+      
+                              </div>
+                          </div>
+                        </td>
+
+                        <td>
+                          <!-- Морковь -->
+                          <div class="product7Card" data-id="07">
+                            <img src="images\carrot.jpg" alt="" width="250">
+                            <hr>
+                            <div class="card-body">
+                                <h4 class="productTitle">Морковь</h4>
+                                <p><small data-products-in-box class="text-muted">35 ккал</small></p>
+        
+                                <div class="details">
+                                    
+                                  <!-- Счётчик -->
+                                    <div class="counterWrapper">
+                                        <div class="productControl" data-action="minus">-</div>
+                                        <div class="productCurrent" data-counter>1</div>
+                                        <div class="productControl" data-action="plus">+</div>
+                                    </div>
+                                  <!-- Конец счётчика -->
+        
+                                </div>
+                            </div>
+                          </td>
+
+                          <td>
+                            <!-- Капуста -->
+                            <div class="product8Card" data-id="08">
+                              <img src="images\cabbage.jpg" alt="" width="250">
+                              <hr>
+                              <div class="card-body">
+                                  <h4 class="productTitle">Капуста</h4>
+                                  <p><small data-products-in-box class="text-muted">31 ккал</small></p>
+          
+                                  <div class="details">
+                                      
+                                    <!-- Счётчик -->
+                                      <div class="counterWrapper">
+                                          <div class="productControl" data-action="minus">-</div>
+                                          <div class="productCurrent" data-counter>1</div>
+                                          <div class="productControl" data-action="plus">+</div>
+                                      </div>
+                                    <!-- Конец счётчика -->
+          
+                                  </div>
+                              </div>
+                            </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <!-- Мясо -->
+                      <div class="product9Card" data-id="09">
+                        <img src="images\pig.jpg" alt="" width="250">
+                        <hr>
+                        <div class="card-body">
+                            <h4 class="productTitle">Мясо</h4>
+                            <p><small data-products-in-box class="text-muted">254 ккал</small></p>
+    
+                            <div class="details">
+                                
+                              <!-- Счётчик -->
+                                <div class="counterWrapper">
+                                    <div class="productControl" data-action="minus">-</div>
+                                    <div class="productCurrent" data-counter>1</div>
+                                    <div class="productControl" data-action="plus">+</div>
+                                </div>
+                              <!-- Конец счётчика -->
+    
+                            </div>
+                        </div>
+                      </td>
+
+                      <td>
+                        <!-- Курица -->
+                        <div class="product10Card" data-id="10">
+                          <img src="images\chicken.jpg" alt="" width="250">
+                          <hr>
+                          <div class="card-body">
+                              <h4 class="productTitle">Курица</h4>
+                              <p><small data-products-in-box class="text-muted">230 ккал</small></p>
+      
+                              <div class="details">
+                                  
+                                <!-- Счётчик -->
+                                  <div class="counterWrapper">
+                                      <div class="productControl" data-action="minus">-</div>
+                                      <div class="productCurrent" data-counter>1</div>
+                                      <div class="productControl" data-action="plus">+</div>
+                                  </div>
+                                <!-- Конец счётчика -->
+      
+                              </div>
+                          </div>
+                        </td>
+
+                        <td>
+                          <!-- Рыба -->
+                          <div class="product11Card" data-id="11">
+                            <img src="images\fish.jpg" alt="" width="250">
+                            <hr>
+                            <div class="card-body">
+                                <h4 class="productTitle">Рыба</h4>
+                                <p><small data-products-in-box class="text-muted">116 ккал</small></p>
+        
+                                <div class="details">
+                                    
+                                  <!-- Счётчик -->
+                                    <div class="counterWrapper">
+                                        <div class="productControl" data-action="minus">-</div>
+                                        <div class="productCurrent" data-counter>1</div>
+                                        <div class="productControl" data-action="plus">+</div>
+                                    </div>
+                                  <!-- Конец счётчика -->
+        
+                                </div>
+                            </div>
+                          </td>
+
+                          <td>
+                            <!-- Креветка -->
+                            <div class="product12Card" data-id="12">
+                              <img src="images\seaProduct.jpg" alt="" width="250">
+                              <hr>
+                              <div class="card-body">
+                                  <h4 class="productTitle">Креветка</h4>
+                                  <p><small data-products-in-box class="text-muted">92 ккал</small></p>
+          
+                                  <div class="details">
+                                      
+                                    <!-- Счётчик -->
+                                      <div class="counterWrapper">
+                                          <div class="productControl" data-action="minus">-</div>
+                                          <div class="productCurrent" data-counter>1</div>
+                                          <div class="productControl" data-action="plus">+</div>
+                                      </div>
+                                    <!-- Конец счётчика -->
+          
+                                  </div>
+                              </div>
+                            </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <!-- Молоко -->
+                      <div class="product13Card" data-id="13">
+                        <img src="images\milk.jpg" alt="" width="250">
+                        <hr>
+                        <div class="card-body">
+                            <h4 class="productTitle">Молоко</h4>
+                            <p><small data-products-in-box class="text-muted">58 ккал</small></p>
+    
+                            <div class="details">
+                                
+                              <!-- Счётчик -->
+                                <div class="counterWrapper">
+                                    <div class="productControl" data-action="minus">-</div>
+                                    <div class="productCurrent" data-counter>1</div>
+                                    <div class="productControl" data-action="plus">+</div>
+                                </div>
+                              <!-- Конец счётчика -->
+    
+                            </div>
+                        </div>
+                      </td>
+
+                      <td>
+                        <!-- Сметана -->
+                        <div class="product14Card" data-id="14">
+                          <img src="images\sourCream.jpg" alt="" width="250">
+                          <hr>
+                          <div class="card-body">
+                              <h4 class="productTitle">Сметана</h4>
+                              <p><small data-products-in-box class="text-muted">158 ккал</small></p>
+      
+                              <div class="details">
+                                  
+                                <!-- Счётчик -->
+                                  <div class="counterWrapper">
+                                      <div class="productControl" data-action="minus">-</div>
+                                      <div class="productCurrent" data-counter>1</div>
+                                      <div class="productControl" data-action="plus">+</div>
+                                  </div>
+                                <!-- Конец счётчика -->
+      
+                              </div>
+                          </div>
+                        </td>
+
+                        <td>
+                          <!-- Сыр -->
+                          <div class="product15Card" data-id="15">
+                            <img src="images\cheese.jpg" alt="" width="250">
+                            <hr>
+                            <div class="card-body">
+                                <h4 class="productTitle">Сыр</h4>
+                                <p><small data-products-in-box class="text-muted">363 ккал</small></p>
+        
+                                <div class="details">
+                                    
+                                  <!-- Счётчик -->
+                                    <div class="counterWrapper">
+                                        <div class="productControl" data-action="minus">-</div>
+                                        <div class="productCurrent" data-counter>1</div>
+                                        <div class="productControl" data-action="plus">+</div>
+                                    </div>
+                                  <!-- Конец счётчика -->
+        
+                                </div>
+                            </div>
+                          </td>
+
+                          <td>
+                            <!-- Творог -->
+                            <div class="product16Card" data-id="16">
+                              <img src="images\cotCheese.jpg" alt="" width="250">
+                              <hr>
+                              <div class="card-body">
+                                  <h4 class="productTitle">Творог</h4>
+                                  <p><small data-products-in-box class="text-muted">120 ккал</small></p>
+          
+                                  <div class="details">
+                                      
+                                    <!-- Счётчик -->
+                                      <div class="counterWrapper">
+                                          <div class="productControl" data-action="minus">-</div>
+                                          <div class="productCurrent" data-counter>1</div>
+                                          <div class="productControl" data-action="plus">+</div>
+                                      </div>
+                                    <!-- Конец счётчика -->
+          
+                                  </div>
+                              </div>
+                            </td>
+                  </tr>
+                  </table>
+                </div>
+
+              </div>
+          </div>
+
+        
+
+          
+      </div>
+    
+  </div>
+
+  <script src="js\counter.js"></script>
+  <style src="styles.css"></style>
+</body>
+</html>
