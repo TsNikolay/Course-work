@@ -1,0 +1,98 @@
+[
+	{
+		"id": 1,
+		"title": "Яблоко",
+		"kal": 63,
+		"imgSrc": "apple.jpg"
+	},
+	{
+		"id": 2,
+		"title": "Груша",
+		"kal": 58,
+		"imgSrc": "pear.jpg"
+	},
+	{
+		"id": 3,
+		"title": "Банан",
+		"kal": 94,
+		"imgSrc": "banana.jpg"
+	},
+	{
+		"id": 4,
+		"title": "Персик",
+		"kal": 46,
+		"imgSrc": "peach.jpg"
+	},
+  {
+		"id": 5,
+		"title": "Огурец",
+		"kal": 14,
+		"imgSrc": "cucumber.jpg"
+	},
+  {
+		"id": 6,
+		"title": "Помидор",
+		"kal": 20,
+		"imgSrc": "tomato.jpg"
+	},
+  {
+		"id": 7,
+		"title": "Морковь",
+		"kal": 35,
+		"imgSrc": "carrot.jpg"
+	},
+  {
+		"id": 8,
+		"title": "Капуста",
+		"kal": 31,
+		"imgSrc": "cabbage.jpg"
+	},
+  {
+		"id": 9,
+		"title": "Мясо",
+		"kal": 254,
+		"imgSrc": "pig.jpg"
+	},
+  {
+		"id": 10,
+		"title": "Курица",
+		"kal": 230,
+		"imgSrc": "chicken.jpg"
+	},
+  {
+		"id": 11,
+		"title": "Рыба",
+		"kal": 116,
+		"imgSrc": "fish.jpg"
+	},
+  {
+		"id": 12,
+		"title": "Креветка",
+		"kal": 92,
+		"imgSrc": "seaProduct.jpg"
+	},
+  {
+		"id": 13,
+		"title": "Молоко",
+		"kal": 58,
+		"imgSrc": "milk.jpg"
+	},
+  {
+		"id": 14,
+		"title": "Сметана",
+		"kal": 158,
+		"imgSrc": "sourCream.jpg"
+	},
+  {
+		"id": 15,
+		"title": "Сыр",
+		"kal": 363,
+		"imgSrc": "cheese.jpg"
+	},
+  {
+		"id": 16,
+		"title": "Творог",
+		"kal": 120,
+		"imgSrc": "cotCheese.jpg"
+	}
+]

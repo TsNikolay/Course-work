@@ -9,18 +9,6 @@ p{
 
 }
 
-.productControl{
-    padding-left: 47%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(241, 211, 136);
-}
-
-.productCurrent{
-    padding-left: 47%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(252, 216, 125);
-}
-
 table {
     table-layout: fixed;
     border-collapse: collapse;
@@ -52,7 +40,44 @@ table {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     background-color: rgb(122, 245, 103);
   }
+.product {
+	font-family: 'Merriweather', serif;
+	background: #f2ede7;
+	border-radius: 8px;
+	width: 90px;
+	display: flex;
+	font-size: 18px;
+	height: 23px;
+	overflow: hidden;
+}
+.productCurrent {
+	width: 30px;
+    text-align: center;
+}
+.productControl {
+	width: 30px;
+	cursor: pointer;
+	text-align: center;
+}
+.details{
 
- 
-
-  
+}
+.productControl:hover {
+    background: #eb5a1e;
+    color: #FFF;
+}
+.productCard{position:relative;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;min-width:0;word-wrap:break-word;background-color:#fff;background-clip:border-box;border:1px solid rgba(0,0,0,.125);border-radius:.25rem}
+.col-md-5{
+	-ms-flex:0 0 41.666667%;
+	flex:0 0 41.666667%;
+	max-width:41.666667%
+}
+.card-body{-ms-flex:1 1 auto;flex:1 1 auto;padding:1.25rem}
+.product-img {
+	width: 265px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.col-md-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}
+.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}
