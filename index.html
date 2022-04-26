@@ -14,17 +14,21 @@
   </div>
   
   <div class="wholePage">
-      <div class="row">
-
+      <div>
             <!--Еда-->
           <div class="firstColumn">
               <div class="foodRow">
                   <table border="1">
+                    <!--Data-->
+                    <div class="col-md-8">
+                      <div class="row" id="container"> </div>
+                    </div>
+                    <!--End data-->
                     <tr>
                       <td>
                   <!-- Яблоко -->
                   <div class="apple">
-                      <div class="product1Card" data-id="01">
+                      <div class="product1Card" data-id="1">
                           <img src="images\apple.jpg" alt="" width="250">
                           <hr>
                           <div class="card-body">
@@ -34,22 +38,23 @@
                               <div class="details">
                                   
                                 <!-- Счётчик -->
-                                  <div class="counterWrapper">
+                                
+                                  <div class="product counterWrapper">
                                       <div class="productControl" data-action="minus">-</div>
                                       <div class="productCurrent" data-counter>1</div>
                                       <div class="productControl" data-action="plus">+</div>
                                   </div>
                                 <!-- Конец счётчика -->
-
                               </div>
                           </div>
+                          <button data-box >в корзину</button>
                       </div>
                   </div>
                 </td>
 
                 <td>
                   <!-- Груша -->
-                  <div class="product2Card" data-id="02">
+                  <div class="product2Card" data-id="2">
                     <img src="images\pear.jpg" alt="" width="250">
                     <hr>
                     <div class="card-body">
@@ -72,7 +77,7 @@
 
                   <td>
                     <!-- Банан -->
-                  <div class=" product3Card" data-id="03">
+                  <div class=" product3Card" data-id="3">
                     <img src="images\banana.jpg" alt="" width="250">
                     <hr>
                     <div class="card-body">
@@ -95,7 +100,7 @@
 
                   <td>
                     <!-- Персик -->
-                    <div class="product4Card" data-id="04">
+                    <div class="product4Card" data-id="4">
                       <img src="images\peach.jpg" alt="" width="250">
                       <hr>
                       <div class="card-body">
@@ -120,7 +125,7 @@
                   <tr>
                     <td>
                       <!-- Огурец -->
-                      <div class="product5Card" data-id="05">
+                      <div class="product5Card" data-id="5">
                         <img src="images\cucumber.jpg" alt="" width="250">
                         <hr>
                         <div class="card-body">
@@ -143,7 +148,7 @@
 
                       <td>
                         <!-- Помидор -->
-                        <div class="product6Card" data-id="06">
+                        <div class="product6Card" data-id="6">
                           <img src="images\tomato.jpg" alt="" width="250">
                           <hr>
                           <div class="card-body">
@@ -166,7 +171,7 @@
 
                         <td>
                           <!-- Морковь -->
-                          <div class="product7Card" data-id="07">
+                          <div class="product7Card" data-id="7">
                             <img src="images\carrot.jpg" alt="" width="250">
                             <hr>
                             <div class="card-body">
@@ -189,7 +194,7 @@
 
                           <td>
                             <!-- Капуста -->
-                            <div class="product8Card" data-id="08">
+                            <div class="product8Card" data-id="8">
                               <img src="images\cabbage.jpg" alt="" width="250">
                               <hr>
                               <div class="card-body">
@@ -213,7 +218,7 @@
                   <tr>
                     <td>
                       <!-- Мясо -->
-                      <div class="product9Card" data-id="09">
+                      <div class="product9Card" data-id="9">
                         <img src="images\pig.jpg" alt="" width="250">
                         <hr>
                         <div class="card-body">
@@ -410,6 +415,8 @@
     
   </div>
 
+  
+  <script src="js\front.js"></script>
   <script src="js\counter.js"></script>
   <style src="styles.css"></style>
 </body>
