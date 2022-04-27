@@ -1,33 +1,14 @@
 h4{
-    padding-left: 40%;
+    padding-left: 35%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 p{
-    padding-left: 40%;
+    padding-left: 15%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
-.productControl{
-    padding-left: 47%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(241, 211, 136);
-}
-
-.productCurrent{
-    padding-left: 47%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(252, 216, 125);
-}
-
-table {
-    table-layout: fixed;
-    border-collapse: collapse;
-    border: 2px solid purple;
-    background-color: rgb(255, 214, 164);
-   
-  }
 
   body{
       background-image:url(https://krot.info/uploads/posts/2021-02/1613582428_17-p-svetlii-fon-s-yedoi-19.jpg) ;
@@ -43,16 +24,81 @@ table {
 
   h1{
     padding-left: 40%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-    border-bottom: 0px;
-  }
-
+    padding-top: 10px;
+    font-family: helvetica;
+    text-transform: uppercase;
+    color: #fefefe;
+     text-shadow: #6ac918 1px 2px 0,
+                  rgb(105, 234, 91) 2px 3px 1px,
+                  rgb(100, 233, 64) 4px 5px 5px;
+    }
+  
   h2{
-    padding-left: 41%;
+    padding-left: 43%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     background-color: rgb(122, 245, 103);
+    color: #ffffff;
+     text-shadow: #448c06 1px 2px 0,
+                  rgb(99, 209, 99) 2px 3px 1px,
+                  rgb(92, 200, 62) 4px 5px 5px;
   }
 
- 
 
-  
+.counterWrapper{
+	padding-left: 5px;
+    
+  }
+
+
+.productCard{
+    position:relative;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    min-width:0;
+    word-wrap:break-word;
+    background-color:#fff;
+    background-clip:border-box;
+    border:1px solid rgba(0,0,0,.125);
+    border-radius:5%;
+    -moz-box-shadow: 0px 0px 14px #faed27; 
+    -webkit-box-shadow: 0px 0px 14px #faed27; 
+    box-shadow: 0px 0px 14px #faed27; 
+    
+}
+
+.col-md-5{
+	-ms-flex: 0 0 25%;
+	flex: 0 0 25%;
+	max-width:23%;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.card-body{
+    -ms-flex:1 1 auto;
+    flex:1 1 auto;
+    padding:1.25rem
+}
+
+.product-img {
+	width: 190px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.col-md-8{
+    -ms-flex:0 0 66.666667%;
+    flex:0 0 66.666667%;
+    max-width:66.666667%
+}
+
+.row{
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    
+}
