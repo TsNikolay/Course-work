@@ -10,47 +10,47 @@ p{
 }
 
 
-  body{
-      background-image:url(https://krot.info/uploads/posts/2021-02/1613582428_17-p-svetlii-fon-s-yedoi-19.jpg) ;
-      background-size: 100%;
-      background-repeat:inherit;
-  }
+body{
+    background-image:url(https://krot.info/uploads/posts/2021-02/1613582428_17-p-svetlii-fon-s-yedoi-19.jpg) ;
+    background-size: 100%;
+    background-repeat:inherit;
+}
 
-  .preview{
-      background-color: bisque;
-      background-size: 100%;
-      
-  }
+.preview{
+    background-color: bisque;
+    background-size: 100%;  
+}
 
-  h1{
+h1{
     padding-left: 40%;
     padding-top: 10px;
     font-family: helvetica;
     text-transform: uppercase;
     color: #fefefe;
-     text-shadow: #6ac918 1px 2px 0,
-                  rgb(105, 234, 91) 2px 3px 1px,
-                  rgb(100, 233, 64) 4px 5px 5px;
-    }
+    text-shadow:#6ac918 1px 2px 0,
+                rgb(105, 234, 91) 2px 3px 1px,
+                rgb(100, 233, 64) 4px 5px 5px;
+}
   
-  h2{
+h2{
     padding-left: 43%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     background-color: rgb(122, 245, 103);
     color: #ffffff;
-     text-shadow: #448c06 1px 2px 0,
-                  rgb(99, 209, 99) 2px 3px 1px,
-                  rgb(92, 200, 62) 4px 5px 5px;
+    text-shadow:#448c06 1px 2px 0,
+                rgb(99, 209, 99) 2px 3px 1px,
+                rgb(92, 200, 62) 4px 5px 5px;
   }
 
+.colBox{
+    -ms-flex-preferred-size:0;
+    flex-basis:0;
+    -ms-flex-positive:1;
+    flex-grow:1;
+    max-width:100%
+}
 
-.counterWrapper{
-	padding-left: 5px;
-    
-  }
-
-
-.productCard{
+.product{
     position:relative;
     display:-ms-flexbox;
     display:flex;
@@ -68,28 +68,20 @@ p{
     
 }
 
-.col-md-5{
-	-ms-flex: 0 0 25%;
-	flex: 0 0 25%;
-	max-width:23%;
-    margin-left: 15px;
-    margin-bottom: 10px;
-}
-
-.card-body{
+.productBody{
     -ms-flex:1 1 auto;
     flex:1 1 auto;
     padding:1.25rem
 }
 
-.product-img {
+.productImg {
 	width: 190px;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.col-md-8{
+.colData{
     -ms-flex:0 0 66.666667%;
     flex:0 0 66.666667%;
     max-width:66.666667%
@@ -102,3 +94,35 @@ p{
     flex-wrap:wrap;
     
 }
+
+.boxImg{
+	max-width: 100px;
+	height: auto;
+}
+
+.boxItem {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #dee2e6;
+}
+
+.boxDesc {
+	padding-top: 15px;
+	padding-left: 15px;
+	max-width: 208px;
+}
+
+.boxTitle {
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+    line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.boxButtons {
+    padding-top: 10px;
+}
+

@@ -14,24 +14,38 @@
   </div>
   
   <div class="wholePage">
-      <div>
-            <!--Еда-->
-          <div class="firstColumn">
-              <div class="row">
-                    <!--Data-->
-                    <div class="col-md-8">
-                      <div class="row" id="container"> </div>
-                    </div>
-                    <!--End data-->
-                </div>
-              </div>
-          </div>
+    <div>
+      <div class="row">
+        <!--Data-->
+        <div class="colData">
+          <div class="row" id="container"> </div>
+        </div>
+        <!--End data-->
+        <!--Box-->
+			  <div class="colBox">
+				  <div class="product">
+					  <div class="productBody">
+						  <h4>Ваши калории</h4>
+						    <!--Box data-->
+						    <div id="box"></div>
+						    <!--End box data-->
+						  <div>
+							  <span>Итого: </span>
+							  <span class="total-kal">0</span>
+							  <span>кал.</span>
+						  </div>
+					  </div>
+				  </div>
+				  <!--End box-->
+			  </div>
       </div>
-    
+    </div>
   </div>
 
+  <script src="js/calc.js"></script>
   <script src="js\front.js"></script>
-  <script src="js\counter.js"></script>
+  <script src="js\calc.js"></script>
+  <script src="js\box.js"></script>
   <style src="styles.css"></style>
 </body>
 </html>
