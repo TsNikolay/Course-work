@@ -1,11 +1,18 @@
+body{
+    background: url(../images/sapperBackground.jpg);
+    background-size: cover ;
+}
+
 #app{
     text-align: center;
+  
 }
 
 .sapper{
     border: 3px solid black;
     padding:  5px;
-    display: inline-block
+    display: inline-block;
+    background-color: white;
 }
 
 .sapper div{
@@ -19,4 +26,45 @@
     width: 50px;
     height: 50px;
     margin: 1px;
+}
+
+.btn {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 1px;
+	border: 1px solid #F18230;
+	border-radius: 25px;
+	height: 46px;
+	line-height: 0;
+	cursor: pointer;
+	touch-action: manipulation;
+    margin-left: 46%;
+    margin-top: 20px;
+}
+.btn span {
+	display: block;	
+	
+	padding: 0 25px;    
+	height: 42px;
+	line-height: 38px;    
+	border: 1px solid #F18230;
+	border-radius: 25px;    
+	font-size: 19px;
+	color: #FFFFFF;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #F18230;
+	text-align: center;
+	font-weight: 600;
+}
+
+.btn:hover span {
+	background-color: #fba768
+}
+.btn:active span {
+	background-color: #c17237 !important;
+}
+
+.counterImg{
+    width: 250px ;
+    padding-left: 41.5%;
+    padding-top: 20px
 }

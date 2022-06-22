@@ -12,7 +12,7 @@ p{
 
 body{
     background-image:url(https://krot.info/uploads/posts/2021-02/1613582428_17-p-svetlii-fon-s-yedoi-19.jpg) ;
-    background-size: 100%;
+    background-size: cover;
     background-repeat:inherit;
 }
 
@@ -124,6 +124,12 @@ h2{
 
 .boxButtons {
     padding-top: 10px;
+}
+
+.counterImg{
+    width: 250px ;
+    padding-left: 25%;
+    padding-top: 20px;
 }
 
 

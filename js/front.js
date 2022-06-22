@@ -25,7 +25,7 @@ function makeHTML(array) {
                 </div>
                 <button data-box >в корзину</button>
             </div>
-        </div>`;
+        </div>`
     Container.insertAdjacentHTML('beforeend', HTML);
     });
 }
