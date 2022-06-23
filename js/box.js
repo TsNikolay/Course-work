@@ -1,24 +1,23 @@
-const box =  document.querySelector('#box');
+const box = document.querySelector("#box");
 
-window.addEventListener('click', function (event) {
-
-  if (event.target.hasAttribute('data-box')) {
-		const product = event.target.closest('.product');
+window.addEventListener("click", function (event) {
+  if (event.target.hasAttribute("data-box")) {
+    const product = event.target.closest(".product");
     const productData = {
-			id: product.dataset.id,
-			imgSrc: product.querySelector('.productImg').getAttribute('src'),
-			title: product.querySelector('.title').innerText,
-      kal: product.querySelector('[data-kal]').innerText,
-			ves: product.getElementsByTagName('input')[0].value,
-		};
+      id: product.dataset.id,
+      imgSrc: product.querySelector(".productImg").getAttribute("src"),
+      title: product.querySelector(".title").innerText,
+      kal: product.querySelector("[data-kal]").innerText,
+      gram: product.getElementsByTagName("input")[0].value,
+    };
     const productInBox = box.querySelector(`[data-id="${productData.id}"]`);
-		
-    if (productInBox && productData.ves > 0) {
-      const result = parseInt(productInBox.getElementsByTagName('input')[0].value) + parseInt(productData.ves);
-      
-      productInBox.getElementsByTagName('input')[0].value = result;
 
-		} else if(productData.ves > 0) {
+    if (productInBox && productData.gram > 0) {
+      const result =
+        parseInt(productInBox.getElementsByTagName("input")[0].value) +
+        parseInt(productData.gram);
+      productInBox.getElementsByTagName("input")[0].value = result;
+    } else if (productData.gram > 0) {
       const HTML = `
         <div class="product" data-id="${productData.id}">
           <div class="boxItem">
@@ -29,7 +28,7 @@ window.addEventListener('click', function (event) {
               <div>
                 <!-- Счётчик -->
                 <div>
-                  <input type="number" min="0" step="100" value="${productData.ves}" size="10"> г.
+                  <input type="number" min="0" step="100" value="${productData.gram}" size="10"> г.
                 </div>
                 <!-- Конец счётчика -->
               </div>
@@ -40,19 +39,20 @@ window.addEventListener('click', function (event) {
             </div> 
           </div>
         </div>`;
-        box.insertAdjacentHTML('beforeend', HTML);
-		}
 
-    product.getElementsByTagName('input')[0].value = '';
-		kalCalculator();
-	}
-  
-  if (event.target.hasAttribute('box-delete')){
-    event.target.closest('.product').remove();
-    kalCalculator();
+      box.insertAdjacentHTML("beforeend", HTML);
+    }
+
+    product.getElementsByTagName("input")[0].value = "";
+    calculator();
   }
 
-  if (event.target.hasAttribute('data-change')){
-    kalCalculator();
+  if (event.target.hasAttribute("box-delete")) {
+    event.target.closest(".product").remove();
+    calculator();
+  }
+
+  if (event.target.hasAttribute("data-change")) {
+    calculator();
   }
 });

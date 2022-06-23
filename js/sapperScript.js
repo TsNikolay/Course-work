@@ -1,11 +1,16 @@
 let matrix = null;
 let play = null;
+const x = 10;
+const y = 10;
+const burgers = 10;
 
-game(10,10,10);
+game(x, y, burgers);
 
-document.querySelector('button').addEventListener('click', () => game(10,10,10));
+document
+  .querySelector("button")
+  .addEventListener("click", () => game(10, 10, 10));
 
-function game (x, y, burgers) {
+function game(x, y, burgers) {
   matrix = getMatrix(x, y);
   play = true;
   for (let i = 0; i < burgers; i++) {
@@ -14,36 +19,36 @@ function game (x, y, burgers) {
   update();
 }
 
-function update () {
+function update() {
   if (!play) {
-    return
-   }
+    return;
+  }
 
-const gameElement = matrixInHTML(matrix);
-const pageElement = document.querySelector('#app');
+  const gameElement = matrixInHTML(matrix);
+  const pageElement = document.querySelector("#app");
 
-pageElement.innerHTML = '';
-pageElement.append(gameElement);
+  pageElement.innerHTML = "";
+  pageElement.append(gameElement);
 
-pageElement.querySelectorAll('img').forEach(imageElement => {
-  imageElement.addEventListener('mousedown', mouseDown);
-  imageElement.addEventListener('mouseup', mouseUp);
-  imageElement.addEventListener('mouseleave', mouseLeave);
-})
+  pageElement.querySelectorAll("img").forEach((imageElement) => {
+    imageElement.addEventListener("mousedown", mouseDown);
+    imageElement.addEventListener("mouseup", mouseUp);
+    imageElement.addEventListener("mouseleave", mouseLeave);
+  });
 
-if (lose(matrix)){
-  alert("Вы проиграли");
-  play = false;
+  if (lose(matrix)) {
+    alert("Вы проиграли");
+    play = false;
+  }
+
+  if (win(matrix)) {
+    alert("Вы победили");
+    play = false;
+  }
 }
 
-if (win(matrix)){
-  alert("Вы победили");
-  play = false;
-}
-}
-
-function mouseDown (event) {
-  const {cell, left, right} = getInfo(event);
+function mouseDown(event) {
+  const { cell, left, right } = getInfo(event);
   if (left) {
     cell.left = true;
   }
@@ -53,8 +58,8 @@ function mouseDown (event) {
   update();
 }
 
-function mouseUp (event) {
-  const {cell, left, right} = getInfo(event);
+function mouseUp(event) {
+  const { cell, left, right } = getInfo(event);
   const both = cell.right && cell.left && (left || right);
   const leftMouse = !both && cell.left && !right;
   const rightMouse = !both && cell.right && right;
@@ -74,34 +79,34 @@ function mouseUp (event) {
   update();
 }
 
-function mouseLeave (event) {
+function mouseLeave(event) {
   const info = getInfo(event);
   info.cell.left = false;
   info.cell.right = false;
   update();
 }
 
-function getInfo (event) {
+function getInfo(event) {
   const element = event.target;
-  const cellId = parseInt(element.getAttribute('data-cell-id'));
+  const cellId = parseInt(element.getAttribute("data-cell-id"));
   const leftMouseId = 1;
   const rightMouseId = 3;
   return {
     left: event.which === leftMouseId,
     right: event.which === rightMouseId,
-    cell: getCellById(matrix, cellId)
-  }
+    cell: getCellById(matrix, cellId),
+  };
 }
 
-function leftClick (cell) {
+function leftClick(cell) {
   if (cell.visible || cell.flag) {
-    return
+    return;
   }
   cell.visible = true;
-  showCells (matrix, cell.x, cell.y);
+  showCells(matrix, cell.x, cell.y);
 }
 
-function rightClick (cell) {
+function rightClick(cell) {
   if (!cell.visible) {
     cell.flag = !cell.flag;
   }
